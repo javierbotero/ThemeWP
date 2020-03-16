@@ -4,3 +4,18 @@ Author: JavierBotero
 Autor URI: https://www.photographyandproductions.com
 Version: 1.0.0
 */
+
+body {
+  font: 1em/2em verdana, sans-serif;
+}
+
+a:link,
+a:visited {
+  color: tomato;
+}
+
+.container {
+  max-width: 900px;
+  padding: 0 5%;
+  margin: 0 auto;
+}

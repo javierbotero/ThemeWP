@@ -7,7 +7,8 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="site-header">
-      <h1><a href="<?php echo home_url(); ?>"><?php bloginfo("name"); ?></a></h1>
-      <h3><?php bloginfo("description"); ?></h3>
-    </header>
+    <div class="container">
+        <header class="site-header">
+          <h1><a href="<?php echo home_url(); ?>"><?php bloginfo("name"); ?></a></h1>
+          <h3><?php bloginfo("description"); ?></h3>
+        </header>
