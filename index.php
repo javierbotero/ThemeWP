@@ -2,13 +2,12 @@
 
 get_header();
 
-  $counter = 0;
   while (have_posts()) {
       the_post(); ?>
-
-      <h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
-      <p><?php the_content() ?></p>
-
+      <article class="post">
+        <h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
+        <p><?php the_content() ?></p>
+      </article>
   <?php }
 
 get_footer();

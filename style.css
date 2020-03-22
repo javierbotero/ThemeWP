@@ -12,10 +12,73 @@ body {
 a:link,
 a:visited {
   color: tomato;
+  text-decoration: none;
 }
 
 .container {
   max-width: 900px;
   padding: 0 5%;
   margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid tomato;
+}
+
+footer {
+  border-top: 1px solid tomato;
+}
+
+article.post {
+  border-bottom: 1px dotted #bbbbbb;
+}
+
+article.post:last-of-type {
+  border-bottom: none;
+}
+
+/* Navigation Menus */
+
+.site-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.site-header .site-nav ul li,
+.site-footer .site-nav ul li {
+  margin-right: 5px;
+  list-style: none;
+  float: left;
+}
+
+.site-nav ul::before,
+.site-nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-header .site-nav ul li a:link,
+.site-footer .site-nav ul li a:visited {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #BBB;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.site-header .site-nav ul li a:hover {
+  background-color: #ECECEC;
+}
+
+.site-header .site-nav ul li.current-menu-item a:visited,
+.site-header .site-nav ul li.current-menu-item a:link {
+  background-color: tomato;
+  color: #FFF;
+}
+
+.site-footer .site-nav ul li {
+  padding: 0 5px;
+  margin-right: 5px;
+  border-right: 1px dotted #bbbbbb;
 }
