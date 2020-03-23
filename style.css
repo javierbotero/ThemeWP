@@ -5,6 +5,10 @@ Autor URI: https://www.photographyandproductions.com
 Version: 1.0.0
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font: 1em/2em verdana, sans-serif;
 }
@@ -81,4 +85,32 @@ article.post:last-of-type {
   padding: 0 5px;
   margin-right: 5px;
   border-right: 1px dotted #bbbbbb;
+}
+
+/* pages style */
+
+article.page h1 {
+  font: 3em sans-serif;
+}
+
+/* Page Services layout and styling */
+
+article div.left-part {
+  width: 30%;
+  float: left;
+}
+
+article div.right-part {
+  width: 70%;
+  float: right;
+  padding: 0 0 10px 10px;
+}
+
+/* Landing Page style */
+
+div.info-box {
+  width: 30%;
+  float: right;
+  background-color: lightgray;
+  padding: 1em;
 }

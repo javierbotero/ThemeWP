@@ -11,6 +11,11 @@
         <header class="site-header">
           <h1><a href="<?php echo home_url(); ?>"><?php bloginfo("name"); ?></a></h1>
           <h3><?php bloginfo("description"); ?></h3>
+          <?php if (is_page('our-company')) { ?>
+            <div class="video">
+              <h3>some video to show</h3>
+            </div>
+          <?php } ?>
           <nav class="site-nav">
             <?php
               $args = array (
