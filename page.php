@@ -7,7 +7,7 @@ get_header();
       <h1>This is the template for all the pages</h1>
       <?php
         $array = array (
-          'child_of' => $post -> ID,
+          'child_of' => top_ancestors(),
           'title_li' => ''
         );
       ?>

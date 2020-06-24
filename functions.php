@@ -13,3 +13,13 @@
       "footer" => __("Footer Menu"),
     )
   );
+
+  // function to get the top top_ancestors
+
+  function top_ancestors() {
+    global $post;
+    if ($post->post_parent) {
+      $ancestors = reverse(get_post_ancestors($post->ID));
+      return $ancestors[0];
+    }
+  }
