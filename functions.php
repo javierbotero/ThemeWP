@@ -19,7 +19,9 @@
   function top_ancestors() {
     global $post;
     if ($post->post_parent) {
-      $ancestors = reverse(get_post_ancestors($post->ID));
+      $ancestors = array_reverse(get_post_ancestors($post->ID));
       return $ancestors[0];
+    } else {
+      return $post->ID;
     }
   }
