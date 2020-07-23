@@ -4,14 +4,17 @@ get_header();
 
   while (have_posts()) {
       the_post(); ?>
-      <h1>This is the template for all the pages</h1>
+      <h1>This is the template page.php</h1>
+      <span><a href="<?php echo get_the_permalink(get_posts_ancestors_id()); ?>">
+          <?php echo get_the_title(get_posts_ancestors_id()); ?></a>
+      </span>
       <?php
-        $array = array (
-          'child_of' => top_ancestors(),
-          'title_li' => ''
+        $args = array(
+            'child_of' => get_posts_ancestors_id(),
+            'title_li' => ''
         );
+        wp_list_pages($args);
       ?>
-      <?php wp_list_pages($array); ?>
       <article class="post page">
         <h1><?php the_title() ?></h1>
         <p><?php the_content() ?></p>
