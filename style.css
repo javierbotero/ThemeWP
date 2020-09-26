@@ -114,3 +114,14 @@ div.info-box {
   background-color: lightgray;
   padding: 1em;
 }
+
+.submit-button {
+  background-color: tomato;
+  color: white;
+  font: 1em/2em verdana, sans-serif;
+  border: 0;
+}
+
+.search-form {
+  float: right;
+}
